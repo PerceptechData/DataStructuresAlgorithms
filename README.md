@@ -37,3 +37,44 @@ algorithms performance, or more notably, the worst case performance.
     * O(f(C * N) = O(f(N)))
     
 ## Typical Runtime Functions
+
+* Big O notation helps to describe some common complexity functions. 
+
+### O(1)
+* A few algorithms take a constant amount of time , such as setting a variable to the first item in an array. 
+It takes one step. This is described as being an **O(1)** behaviour. 
+* If an algorithm performs a defined number of steps, its constant runtime would never change. Even if it is a million steps, the constant runtime never changes.
+*as long as the number of steps does not change when N increases*.
+
+### O(n^2)
+* Is the order done twice, simply put. As big O rule 2 demonstrates.
+
+### O(n^c)
+* C nested loops where c is the constant demonstrates c amount of loops
+* Here we know that c is constant and N typically does not increase as c increases
+
+### O(log N)
+* These are problems that divide a search space into 2 pieces at each step
+* Let us say you want to search for the number 15:
+    1. you start at the root node [21]
+    2. [21] is more than [15] so we go down the lower node [9]
+    3. we have now cut the collection of possible nodes by half\
+    4. this will continue until the relevant node is found
+```
+            [21]
+            /  \
+           /    \
+        [9]      [35]
+        / \      /  \
+      [7] [15] [24] [45]
+```
+* With Log N, O Notation is always the same no matter how many Log bases (such as heb, 10 or binary) are used:
+    * LogB(N) = LogA(N) / LogA(B)
+    
+### O(2^n)
+* Exponential time where the growth doubles with each addition of the input data set
+* This is commonly found in brute force algorithms
+
+### O(N!)
+* Factorial means N * (N -1) * (N - 2) * (N - 3) ...
+* 6! = 6 * 5 * 4 * 3 * 2 * 1
