@@ -108,5 +108,17 @@ Consider this, if we want to find the largest value in a list we could:
 * Step through each item of the list and keep track of the largest item you have seen so far. If the list contains N numbers, the algorithm will do N steps. This is an example of Polynomial Time.
 * In this case our function can make an inspired guess as to which variable is the largest in our list, and then verify if that is indeed the case. THis makes it a Non-deterministic Polynomial Time Algorithm.
 
+# Numerical Algorithms
 
+## Random Numbers
+Many algorithms seem to be able to produce random numbers from a group or list of numbers. In practice, true randomness in computing is extremely rare.
+This is because computers simply follow a list of definite steps, quantum computing may deliver different solutions in this regard. 
 
+We have different types of number generators:
+* (PRNG) Pseudorandom Number Generators
+* (CRNG) Cryptographic Random Number Generator
+* (TRNG) True Random Number Generator
+
+look at ww.random.org
+
+## Linear Congruential Generators (LCGs)
