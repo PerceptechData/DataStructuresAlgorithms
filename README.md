@@ -99,3 +99,14 @@ O(Log N) is considered the fastest method of designing a function, since a logar
 | N!        | 4.02X10^2567| 1.28X10^2554 years|
 
 ## P and NP
+There is a philosophical question out there that asks "does P = NP"
+
+* P - Polynomial Time (being deterministic)
+* NP - Non-deterministic Polynomial Time
+
+Consider this, if we want to find the largest value in a list we could:
+* Step through each item of the list and keep track of the largest item you have seen so far. If the list contains N numbers, the algorithm will do N steps. This is an example of Polynomial Time.
+* In this case our function can make an inspired guess as to which variable is the largest in our list, and then verify if that is indeed the case. THis makes it a Non-deterministic Polynomial Time Algorithm.
+
+
+
