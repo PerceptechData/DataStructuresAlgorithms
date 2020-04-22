@@ -78,3 +78,24 @@ It takes one step. This is described as being an **O(1)** behaviour.
 ### O(N!)
 * Factorial means N * (N -1) * (N - 2) * (N - 3) ...
 * 6! = 6 * 5 * 4 * 3 * 2 * 1
+
+## Comparing Runtime Functions
+Now lets see how different runtime functions may compare to each other.
+For example f(n^2) would grow much faster than f(n).
+
+You would find that functions such as N Factorial (N!) have an extremely steep increase in the tme it takes
+to execute the task as more data is given to it.
+In this respect, we can consider (N) as having a linear line where there is a steady increase in time as more data is given, but not so much so that the
+function could be considered slow.
+O(Log N) is considered the fastest method of designing a function, since a logarithmic function cuts it's workload in half with every step.
+
+| Runtime   | F(1, 100)   | Time       |
+|-----------|-------------|------------|
+| O(Log N)  | 10          | 0.00001 sec|
+| O(sqrt N) | 32          | 0.00003 sec|
+| N         | 1, 000      | 0.001 sec  |
+| N^2       | 1, 000, 000 | 1 sec      |
+| 2^N       | 1.07x10^301 | 3.40X10^287 years |
+| N!        | 4.02X10^2567| 1.28X10^2554 years|
+
+## P and NP
